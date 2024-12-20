@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+   background-image: url('../Images/WhatsApp\ Image\ 2024-12-19\ at\ 5.12.02\ PM.jpeg');
+   height: auto;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.btn-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+.btn-nav button{
+    background-color: #b6acfb;
+    width: 200px;
+    height: 50px;
+    border-radius: 22px;
+    border: 1px solid white;
+    font-family: "Playfair", serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+.header h1{
+    font-family: "Cedarville Cursive", serif;
+  font-weight: bolder;
+  font-style:normal;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+}
+.card_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards{
+    height:300px;
+    width: 200px;
+    border: 1px solid white;
+background-color: #b5abfa;
+margin-bottom: 20px;
+ 
+}
+
+.cards i{
+margin-left: 160px;
+color: black;
+margin-top: 20px;
+}
+.cards p{
+margin-left: 20px;
+}
+.picture{
+ 
+ margin-top: 10px;
+ margin-left: 40px;
+    height:180px;
+    width: 120px;
+    border: 1px solid rgb(225, 224, 224);
+    background-color: rgb(225, 224, 224);
+}
+
+/* 1440px and below */
+@media (max-width: 1440px) {
+    .btn-nav {
+      justify-content: space-around;
+    }
+    .btn-nav button {
+      width: 180px;
+      height: 45px;
+      font-size: 18px;
+    }
+    .header h1 {
+      font-size: 42px;
+      text-align: center;
+    }
+    .cards {
+      height: 280px;
+      width: 180px;
+      margin: 10px auto;
+    }
+    .picture {
+      height: 160px;
+      width: 110px;
+      margin: 10px auto;
+    }
+    .cards i{
+        font-size: 20px;
+        margin-left: 140px;
+        text-align: center;
+    }
+  }
+  
+  /* 1024px and below */
+  @media (max-width: 1024px) {
+    .btn-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .btn-nav button {
+      width: 160px;
+      height: 40px;
+      font-size: 16px;
+    }
+    .header h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+    .cards {
+      height: 250px;
+      width: 160px;
+      margin: 15px auto;
+    }
+    .picture {
+      height: 140px;
+      width: 100px;
+      margin: 10px auto;
+    }
+    .cards i{
+        font-size: 20px;
+        margin-left: 120px;
+        text-align: center;
+    }
+  }
+  
+  /* 900px and below */
+  @media (max-width: 900px) {
+    .btn-nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .btn-nav button {
+      width: 150px;
+      height: 35px;
+      font-size: 14px;
+    }
+    .header h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+    .cards {
+      height: 220px;
+      width: 140px;
+      margin: 15px auto;
+    }
+    .picture {
+      height: 120px;
+      width: 90px;
+      margin-top: 10px;
+    }
+    .cards i{
+        font-size: 20px;
+        margin-left: 100px;
+        text-align: center;
+    }
+  }
+  
+  /* 768px and below */
+  @media (max-width: 768px) {
+    .btn-nav {
+      padding: 20px;
+    }
+    .btn-nav button {
+      width: 140px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .header h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+    .cards {
+      height: 200px;
+      width: 120px;
+      margin: 10px auto;
+    }
+    .picture {
+      height: 100px;
+      width: 80px;
+      margin: 10px auto;
+    }
+    .cards i{
+        
+            font-size: 18px;
+            margin-left: 90px;
+            text-align: center;
+          
+    }
+  }
+  
+  /* 300px and below */
+  @media (max-width: 320px) {
+    .btn-nav button {
+      width: 120px;
+      height: 25px;
+      font-size: 10px;
+    }
+    .header h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .card_container {
+        flex-direction: column;
+        align-items: center;
+      }
+    .cards {
+      height: 180px;
+      width: 150px;
+      margin: 10px auto;
+    }
+    .picture {
+      height: 80px;
+      width: 90px;
+      margin: 10px auto;
+    }
+    .cards i {
+        font-size: 16px;
+       margin-left: 120px;
+        text-align: center;
+      }
+  }
+  
